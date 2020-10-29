@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d0a0fe2db4b07716aaa2",
-    "url": "https://reduction-admin.github.io/react-reduction/static/js/0.f8c873a5.chunk.js"
+    "revision": "12c996a5be0859a7fe4b",
+    "url": "https://reduction-admin.github.io/react-reduction/static/js/0.84f419c0.chunk.js"
   },
   {
-    "revision": "a617dd46b328d78d4fd3",
+    "revision": "a909487b6709bb851be9",
     "url": "https://reduction-admin.github.io/react-reduction/static/css/main.d1993f35.chunk.css"
   },
   {
-    "revision": "a617dd46b328d78d4fd3",
-    "url": "https://reduction-admin.github.io/react-reduction/static/js/main.f9c6f5fe.chunk.js"
+    "revision": "a909487b6709bb851be9",
+    "url": "https://reduction-admin.github.io/react-reduction/static/js/main.aea40738.chunk.js"
   },
   {
-    "revision": "4ee82936dbae5315d174",
-    "url": "https://reduction-admin.github.io/react-reduction/static/js/runtime~main.99714365.js"
+    "revision": "3b28a77d05bfcc30655b",
+    "url": "https://reduction-admin.github.io/react-reduction/static/js/runtime~main.6c2216eb.js"
   },
   {
     "revision": "1840c4a7345d4a24b137",
@@ -212,7 +212,7 @@ self.__precacheManifest = [
     "url": "https://reduction-admin.github.io/react-reduction/static/media/100_14.595b8cbd.jpg"
   },
   {
-    "revision": "93fa1280c9145f8c1c80a7c96e7d9852",
+    "revision": "831bbdaa7fcb54869297e18c8554e9be",
     "url": "https://reduction-admin.github.io/react-reduction/index.html"
   }
 ];
