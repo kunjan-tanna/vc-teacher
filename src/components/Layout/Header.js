@@ -5,6 +5,9 @@ import SearchInput from 'components/SearchInput';
 import { notificationsData } from 'demos/header';
 import withBadge from 'hocs/withBadge';
 import React from 'react';
+import { connect } from 'react-redux';
+import { history } from '../../history';
+import { withRouter, NavLink as RRNavLink } from 'react-router-dom';
 import {
   MdClearAll,
   MdExitToApp,
@@ -29,7 +32,7 @@ import {
   PopoverBody,
 } from 'reactstrap';
 import bn from 'utils/bemnames';
-
+import { logout } from '../../redux/actions/auth/loginActions';
 const bem = bn.create('header');
 
 const MdNotificationsActiveWithBadge = withBadge({
@@ -46,6 +49,21 @@ const MdNotificationsActiveWithBadge = withBadge({
 })(MdNotificationsActive);
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userInfo: this.props.userInfo,
+
+      formData: {},
+    };
+  }
+  handleitem = (e, path) => {
+    e.preventDefault();
+    this.props.logout();
+
+    history.push(path);
+  };
+
   state = {
     isOpenNotificationPopover: false,
     isNotificationConfirmed: false,
@@ -76,7 +94,8 @@ class Header extends React.Component {
   };
 
   render() {
-    const { isNotificationConfirmed } = this.state;
+    console.log(this.state.userInfo);
+    const { isNotificationConfirmed, userInfo } = this.state;
 
     return (
       <Navbar light expand className={bem.b('bg-white')}>
@@ -85,16 +104,13 @@ class Header extends React.Component {
             <MdClearAll size={25} />
           </Button>
         </Nav>
-        <Nav navbar>
-          <SearchInput />
-        </Nav>
 
         <Nav navbar className={bem.e('nav-right')}>
           <NavItem className="d-inline-flex">
             <NavLink id="Popover1" className="position-relative">
               {isNotificationConfirmed ? (
                 <MdNotificationsNone
-                  size={25}
+                  size={50}
                   className="text-secondary can-click"
                   onClick={this.toggleNotificationPopover}
                 />
@@ -135,9 +151,8 @@ class Header extends React.Component {
             >
               <PopoverBody className="p-0 border-light">
                 <UserCard
-                  title="Jane"
-                  subtitle="jane@jane.com"
-                  text="Last updated 3 mins ago"
+                  title={userInfo.firstName + ' ' + userInfo.lastName}
+                  subtitle={userInfo.email}
                   className="border-light"
                 >
                   <ListGroup flush>
@@ -156,7 +171,12 @@ class Header extends React.Component {
                     <ListGroupItem tag="button" action className="border-light">
                       <MdHelp /> Help
                     </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
+                    <ListGroupItem
+                      tag="button"
+                      action
+                      className="border-light"
+                      onClick={e => this.handleitem(e, '/login')}
+                    >
                       <MdExitToApp /> Signout
                     </ListGroupItem>
                   </ListGroup>
@@ -169,5 +189,12 @@ class Header extends React.Component {
     );
   }
 }
-
-export default Header;
+const mapStateToProps = state => {
+  return {
+    userInfo: state.auth.login.userInfo,
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return { logout: () => dispatch(logout()), dispatch };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
