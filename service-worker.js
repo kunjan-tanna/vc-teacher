@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://kunjan-tanna.github.io/vc-teacher/precache-manifest.65ad355214dd70106a88113bc3c4af1e.js"
+  "https://kunjan-tanna.github.io/vc-teacher/precache-manifest.d101a15cc429580349bf0584d54fff11.js"
 );
 
 workbox.clientsClaim();

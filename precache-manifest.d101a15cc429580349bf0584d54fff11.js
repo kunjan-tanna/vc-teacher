@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "d189fe09e81cb9986797",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/0.885525f1.chunk.js"
+    "revision": "a1d3f2238ca5b3821fa3",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/0.42c7f792.chunk.js"
   },
   {
     "revision": "5bdf19e551540c49b6c8",
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/main.fd38c690.chunk.js"
   },
   {
-    "revision": "cca2c837a5a48ac508ec",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/runtime~main.66393bd7.js"
+    "revision": "d719564d0b86f06c2526",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/runtime~main.c5e39a91.js"
   },
   {
-    "revision": "b9c69e659b7442adf152",
+    "revision": "97cd16da5aee16c92fcc",
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/css/3.4a605369.chunk.css"
   },
   {
-    "revision": "b9c69e659b7442adf152",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/3.b9fcbb29.chunk.js"
+    "revision": "97cd16da5aee16c92fcc",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/3.7947bf44.chunk.js"
   },
   {
-    "revision": "0a647cc3f51acadd7c36",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/4.5e5259f5.chunk.js"
+    "revision": "cca6610c5e6b11ecfcba",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/4.36c9616b.chunk.js"
   },
   {
     "revision": "7c939ccf7449a9301116",
@@ -32,32 +32,32 @@ self.__precacheManifest = [
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/5.f74623b4.chunk.js"
   },
   {
-    "revision": "6e8d36e5c487c6a85e77",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/6.4e6e605d.chunk.js"
+    "revision": "25b5123ee4fcde0f045d",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/6.12e9ec91.chunk.js"
   },
   {
-    "revision": "a51823baff214e1688d2",
+    "revision": "1c38b5bb0d8aa96687f7",
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/css/7.a679a390.chunk.css"
   },
   {
-    "revision": "a51823baff214e1688d2",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/7.9f5a4504.chunk.js"
+    "revision": "1c38b5bb0d8aa96687f7",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/7.62de8570.chunk.js"
   },
   {
-    "revision": "0bd67c9ab45010d376ca",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/8.5b35726f.chunk.js"
+    "revision": "b06cb58a7873463aac0e",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/8.01dbd2f2.chunk.js"
   },
   {
-    "revision": "9cc92ee1f333f34ce9f3",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/9.b9fa1a2e.chunk.js"
+    "revision": "f2ea83ae98431312cca1",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/9.5b0d4396.chunk.js"
   },
   {
-    "revision": "9d398ff5f6d0b719f066",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/10.b10dc9eb.chunk.js"
+    "revision": "171cedb77140a57b6a79",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/10.ffb9b2b3.chunk.js"
   },
   {
-    "revision": "c00e94db82babea07229",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/11.f96a71a1.chunk.js"
+    "revision": "06306f74c9fcc3fac4e5",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/11.d4b02b3a.chunk.js"
   },
   {
     "revision": "aec1f100f75ff4a4d8a1",
@@ -68,16 +68,16 @@ self.__precacheManifest = [
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/13.999a7008.chunk.js"
   },
   {
-    "revision": "42d6f657e9101acace15",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/14.992e8338.chunk.js"
+    "revision": "4c78b7bc4801cdafc554",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/14.0c130b59.chunk.js"
   },
   {
-    "revision": "8a85e796e232c7fc467f",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/15.710841b4.chunk.js"
+    "revision": "51013e3a271274e5dcd4",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/15.eb257dab.chunk.js"
   },
   {
-    "revision": "f0238b32d75cd2667459",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/16.c0b9cf85.chunk.js"
+    "revision": "57fc0b4974e6680e287d",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/16.4fad27d7.chunk.js"
   },
   {
     "revision": "d73af320801027299de3",
@@ -88,12 +88,12 @@ self.__precacheManifest = [
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/18.36885b45.chunk.js"
   },
   {
-    "revision": "65691b8258094e70bf27",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/19.614d1bb7.chunk.js"
+    "revision": "c0ea6f9414b302e26049",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/19.66947cbd.chunk.js"
   },
   {
-    "revision": "682283570a77380754de",
-    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/20.36bbfc1d.chunk.js"
+    "revision": "9bc6337bcceb3f5ec807",
+    "url": "https://kunjan-tanna.github.io/vc-teacher/static/js/20.5d8fb099.chunk.js"
   },
   {
     "revision": "6cb0da3a0a84508b32f2",
@@ -232,7 +232,7 @@ self.__precacheManifest = [
     "url": "https://kunjan-tanna.github.io/vc-teacher/static/media/100_14.595b8cbd.jpg"
   },
   {
-    "revision": "d4b56bd58edb382e38606c227460554a",
+    "revision": "0f3d7aeed18f210d93d9236b9d992e51",
     "url": "https://kunjan-tanna.github.io/vc-teacher/index.html"
   }
 ];
