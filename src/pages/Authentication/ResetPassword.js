@@ -17,7 +17,7 @@ import {
 import fgImg from '../../assets/img/pages/forgot-password.png';
 import { history } from '../../history';
 import { connect } from 'react-redux';
-//import { forgotPass } from '../../redux/actions/auth/forgotPassword';
+import { resetPass } from '../../redux/actions/auth/resetPassword';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,50 +25,58 @@ class ResetPassword extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formData: {},
+      newPass: '',
     };
   }
   //handleInput
   handleInput = event => {
     event.persist();
-    this.setState(
-      prevState => ({
-        formData: {
-          ...prevState.formData,
-          [event.target.name]: event.target.value,
-        },
-      }),
-      () => console.log('Name Input', event.target.value),
-    );
+    this.setState(prevState => ({
+      newPass: {
+        ...prevState.newPass,
+        [event.target.name]: event.target.value,
+      },
+    }));
   };
   //Handle Form Submit
-  handleFormSubmit = () => {
+  handleFormSubmit = resetLink => {
+    const obj = {
+      resetLink: resetLink,
+      newPass: this.state.newPass.password,
+    };
     //
     // console.log('FORMDATA===', this.state.formData);
-    // this.props
-    //   .dispatch(forgotPass(this.state.formData))
-    //   .then(res => {
-    //     console.log('RRRRRR', res);
-    //     if (res.data) {
-    //       // Add success message in Toast
-    //       toast.success('Email has been sent, kindly Follow the instruction', {
-    //         position: toast.POSITION.BOTTOM_RIGHT,
-    //       });
-    //     } else {
-    //       // show error message in Toast
-    //       toast.error('Something went wrong', {
-    //         position: toast.POSITION.BOTTOM_RIGHT,
-    //       });
-    //     }
-    //   })
-    //   .catch(error => {
-    //     // show error message in Toast
-    //     toast.error('Something went wrong', {
-    //       position: toast.POSITION.BOTTOM_RIGHT,
-    //     });
-    //   });
+    this.props
+      .dispatch(resetPass(obj))
+      .then(res => {
+        if (res.data) {
+          // Add success message in Toast
+          toast.success('Your Password hab been Changed', {
+            position: toast.POSITION.BOTTOM_RIGHT,
+          });
+          setTimeout(() => {
+            history.push('/login');
+          }, 3000);
+        } else {
+          // show error message in Toast
+          toast.error('"USER with a ResetLink does not exists', {
+            position: toast.POSITION.BOTTOM_RIGHT,
+          });
+        }
+      })
+      .catch(error => {
+        // show error message in Toast
+        toast.error('"USER with a ResetLink does not exists', {
+          position: toast.POSITION.BOTTOM_RIGHT,
+        });
+        setTimeout(() => {
+          history.push('/forgot-pass');
+        }, 3000);
+      });
   };
   render() {
+    const search = this.props.location.search;
+    const resetLink = search.split('=')[1];
     return (
       <Row
         style={{
@@ -93,7 +101,7 @@ class ResetPassword extends React.Component {
             <Form
               onSubmit={e => {
                 e.preventDefault();
-                this.handleFormSubmit();
+                this.handleFormSubmit(resetLink);
               }}
             >
               <FormGroup className="form-label-group position-relative has-icon-left">

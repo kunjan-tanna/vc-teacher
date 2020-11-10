@@ -1,13 +1,12 @@
-import axios from '../../../configs/axiosConfig'
+import axios from '../../../configs/axiosConfig';
 
-//Create Add Lead 
-export const forgotPass = (data) => async (dispatch) => {
-    console.log("ADD LEAD",data)
-    let obj = {
-        email: data.email,
-    }
-    console.log('OBJ',obj)
-    const res = await axios.put('/forgotpassword', obj)
-    console.log('Response',res)
-      return res
-  }
+//Create Add Lead
+export const forgotPass = data => async dispatch => {
+  let obj = {
+    email: data.email,
+  };
+
+  const res = await axios.put('/forgotpassword', obj);
+  console.log('Response', res);
+  return res;
+};
